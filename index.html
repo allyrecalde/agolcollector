@@ -26,7 +26,7 @@
     <script>
         require([ "esri/config", "esri/Map", "esri/views/MapView", "esri/widgets/Locate", "esri/widgets/Search", "esri/layers/FeatureLayer" ], (esriConfig, Map, MapView, Locate, Search, FeatureLayer) => {
 
-            esriConfig.apiKey = "YAAPK433f41466d60440d91c1c31affdeed39q333BLHYUdTBT9x5jyyBb6p5XkRkl5eFjmdjMaBT3iK9RqETfIR9HgYcNRdNPvtL";
+            esriConfig.apiKey = "AAPK433f41466d60440d91c1c31affdeed39q333BLHYUdTBT9x5jyyBb6p5XkRkl5eFjmdjMaBT3iK9RqETfIR9HgYcNRdNPvtL";
 
             const map = new Map({
                 basemap: "satellite"
@@ -45,7 +45,8 @@
             // Create featurelayer from feature service 
             const layer = new FeatureLayer({ 
             // URL to the service 
-            url: "https://services.arcgis.com/LBbVDC0hKPAnLRpO/arcgis/rest/services/survey123_4172f592fb124ed3b9daa2dacac5f895/FeatureServer/0"
+            url: "https://services.arcgis.com/LBbVDC0hKPAnLRpO/ArcGIS/rest/services/survey123_4172f592fb124ed3b9daa2dacac5f895/FeatureServer",
+            visible: true
             });
 
             map.add(layer);
